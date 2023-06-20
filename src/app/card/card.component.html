@@ -1,6 +1,7 @@
 <div id="card">
     <div class="img">
-    <img src="assets/img/ian-dooley-d1UPkiFd04A-unsplash.jpg" alt="">
+    <img *ngIf="contact.images"[src]=contact.images alt="">
+    <p *ngif !="contact.images"></p>
     </div>
     <div class="user">
      <p>Nom: {{contact.nom}}</p>
