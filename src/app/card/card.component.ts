@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { userData } from 'src/models/card.model';
 
 @Component({
   selector: 'app-card',
@@ -6,15 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit {
-  nom!:string;
-  premon!:string;
-  email!:string;
-  tel!:string;
+  contact!:userData;
   ngOnInit(): void {
-    this.nom="casagr";
-    this.premon="Romain";
-    this.email="rom@live.fr";
-    this.tel="0625632563";
+    this.contact=new userData();
+    this.contact.nom="casagr";
+    this.contact.premon="Romain";
+    this.contact.email="rom@live.fr";
+    this.contact.tel="0625632563";
   }
 
 }
