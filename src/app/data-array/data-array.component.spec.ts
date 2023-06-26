@@ -1,15 +1,15 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { CardComponent } from './card.component';
+import { DataArrayComponent } from './data-array.component';
 
-describe('CardComponent', () => {
-  let component: CardComponent;
-  let fixture: ComponentFixture<CardComponent>;
+describe('DataArrayComponent', () => {
+  let component: DataArrayComponent;
+  let fixture: ComponentFixture<DataArrayComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [CardComponent]
+      declarations: [DataArrayComponent]
     });
-    fixture = TestBed.createComponent(CardComponent);
+    fixture = TestBed.createComponent(DataArrayComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
