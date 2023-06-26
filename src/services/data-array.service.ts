@@ -47,12 +47,16 @@ export class dataArrayService{
 
 
 
-//  getcontact():userData[]{
-//      return this.liste
-//  }
+ getcontact():userData[]{
+     return this.liste
+ }
 
 
- getcontactsid(idcontact: number):userData[]{
-    return this.liste.filter(user => user.id === idcontact);
-    }
-};
+ getcontactsid(id: number):userData{
+  for(let  i=0;i<this.liste.length;i++){
+    if(this.liste[i].id === id)
+    return this.liste[i];
+  }
+  return new userData();
+}
+}

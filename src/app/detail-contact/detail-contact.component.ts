@@ -8,14 +8,12 @@ import { dataArrayService } from 'src/services/data-array.service';
   styleUrls: ['./detail-contact.component.css']
 })
 export class DetailContactComponent implements OnInit {
-  contact!:userData;
-  @Input()liste!:userData[];
+    liste!:userData;
    constructor(private contactArray :dataArrayService){
 
   }
   ngOnInit(): void {
   
-  const idcontact = 1;
-  this.liste=this.contactArray.getcontactsid(idcontact);
+  this.liste=this.contactArray.getcontactsid(0);
 }
 }

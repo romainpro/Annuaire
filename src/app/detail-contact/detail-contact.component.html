@@ -1,12 +1,12 @@
-<div class="card" [ngClass]="{supplier:contact.job!='supplier'}">
+<div class="card" [ngClass]="{supplier:liste.job!='supplier'}">
     <div class="img">
-    <img *ngIf="contact.images"[src]=contact.images alt="">
+    <img *ngIf="liste.images"[src]=liste.images alt="">
     </div>
     <div class="user">
-     <p>Nom: {{contact.nom}}</p>
-     <p>Prémon: {{contact.premon}}</p>
-     <p>email :{{contact.email}}</p>
-     <p>Tel: {{contact.tel}}</p>
-     <p>job:{{contact.job}}</p>
+     <p>Nom: {{liste.nom}}</p>
+     <p>Prémon: {{liste.premon}}</p>
+     <p>email :{{liste.email}}</p>
+     <p>Tel: {{liste.tel}}</p>
+     <p>job:{{liste.job}}</p>
     </div>
 </div>

@@ -3,11 +3,11 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width:400px;
+    width:1000px;
     border: 2px #EDF7B5 solid;
     border-radius: 10% / 50%;
     background-color: #118AB2;
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: #2B303A;
     font-family: 'Oswald', sans-serif;
     cursor: pointer;
@@ -37,11 +37,11 @@ img{
 
     
 }
-.card:hover{
+/* .card:hover{
     transform: scale(1.1);
     border: greenyellow 3px solid;
     transition: transform 300ms ease-in-out;
-}
+} */
 
 
 .supplier{
